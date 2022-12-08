@@ -1,0 +1,28 @@
+Load R0, [A]
+Load R1, [B]
+Load R3, [op_result]
+ror R0, 5
+ror R1, 2
+ADDI R4,R0,R1
+xor R5,R0,R1
+or R6,R4,R5
+store R6,[op_result]
+store R6,[result]
+
+
+
+
+
+
+
+
+
+A: DB 9,25
+B: DB 1,25
+op_result: db 0
+result: db 0
+
+
+
+
+
